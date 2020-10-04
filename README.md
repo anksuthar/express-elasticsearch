@@ -39,25 +39,9 @@ This framework use Express 4, and has been integrated to use Jade (for view file
 
 You can install web dependencies using Bower. All dependencies will be installed on `components` sub-directory inside `public` directory. Don't forget to add additional parameter `--save` to ensure that the new dependency will be persisted to `bower.json` file.
 
-## Controllers and Actions
+## Routes and models
 
-This framework using Controller, and View to serve your apps. First, Controller will control the logic to interact with your data model and serve it to view that can be navigated to user.
-
-To create new controller, you'll need to define a controller function and exports it.
-
-```javascript
-function controller = function(args) {
-    var actions = {};
-    
-    // Do something with the actions object.
-    
-    return actions;
-};
-
-module.exports = controller;
-```
-
-Every controller has action that each of it representing 1 or several urls. It also has a `views` folder that can be used to display a view. 
+This framework using Routes, and View to serve your apps. First, Routes will control the logic to interact with your data model and serve it to view that can be navigated to project.
 
 Let's say you have url list below:
 
